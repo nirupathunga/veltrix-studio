@@ -1,6 +1,6 @@
 /* ─────────────────────────────────────────────────────────
    src/pages/About.jsx
-   Veltrix Studio — Agency Narratives, Team Profiles, & Values
+   Zyvone Technologies — Agency Narratives, Team Profiles, & Values
 ───────────────────────────────────────────────────────── */
 import React from "react";
 import { motion } from "framer-motion";
@@ -61,7 +61,7 @@ export default function About() {
               Design and engineering working in harmony.
             </h2>
             <p className="text-sm text-slate-500 dark:text-slate-400 font-light leading-relaxed">
-              We started Veltrix because most digital products look abandoned. Generic templates, slow performance, and poor attention to detail waste everyone's time. We believe your product deserves better—something built with care, optimized from the ground up, and aligned with your brand.
+              We started Zyvone Technologies because most digital products look abandoned. Generic templates, slow performance, and poor attention to detail waste everyone's time. We believe your product deserves better—something built with care, optimized from the ground up, and aligned with your brand.
             </p>
             <p className="text-sm text-slate-500 dark:text-slate-400 font-light leading-relaxed">
               We combine sharp design sensibility with rigorous engineering. The result is products that don't just look premium—they feel premium. Responsive, fast, accessible, and built to scale.

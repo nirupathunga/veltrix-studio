@@ -1,6 +1,6 @@
 /* ─────────────────────────────────────────────────────────
    src/pages/Services.jsx
-   Veltrix Studio — Agency Services, Pricing, & FAQ Systems
+   Zyvone Technologies — Agency Services, Pricing, & FAQ Systems
 ───────────────────────────────────────────────────────── */
 import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";

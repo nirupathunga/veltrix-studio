@@ -1,6 +1,6 @@
 /* ─────────────────────────────────────────────────────────
    src/pages/Contact.jsx
-   Veltrix Studio — Interactive Contact Gateway Interface
+   Zyvone Technologies — Interactive Contact Gateway Interface
 ───────────────────────────────────────────────────────── */
 import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";

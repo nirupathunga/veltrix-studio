@@ -1,6 +1,6 @@
 /* ─────────────────────────────────────────────────────────
    src/pages/Products.jsx
-   Veltrix Studio — Interactive Product Catalog Archive
+   Zyvone Technologies — Interactive Product Catalog Archive
 ───────────────────────────────────────────────────────── */
 import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";

@@ -55,7 +55,7 @@ export default function Footer() {
                 <span className="relative h-2 w-2 rounded-full bg-indigo-500" />
               </span>
               <span className="text-base font-bold tracking-tight text-white font-sans">
-                Veltrix<span className="text-indigo-400"> Studio</span>
+                Zyvone<span className="text-indigo-400"> Technologies</span>
               </span>
             </Link>
 
@@ -202,7 +202,7 @@ export default function Footer() {
       <div className="border-t border-slate-900/60 bg-slate-950/50">
         <div className="max-w-7xl mx-auto px-5 sm:px-8 lg:px-12 py-5 flex flex-col sm:flex-row items-center justify-between gap-3">
           <p className="text-xs text-slate-600 text-center sm:text-left">
-            © {currentYear} Veltrix Studio LLC. All rights reserved.
+            © {currentYear} Zyvone Technologies LLC. All rights reserved.
           </p>
           <div className="flex items-center gap-5">
             {["Privacy Policy", "Terms of Service"].map((item) => (

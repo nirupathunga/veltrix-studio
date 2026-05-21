@@ -1,6 +1,6 @@
 /* ─────────────────────────────────────────────────────────
     src/pages/Home.jsx
-    Veltrix Studio — Landing Page
+    Zyvone Technologies — Landing Page
 ───────────────────────────────────────────────────────── */
 import React, { useRef } from "react";
 import { Link } from "react-router-dom";
@@ -154,7 +154,7 @@ function HeroSection() {
         transition={{ duration: 0.6, delay: 0.38, ease: [0.22, 1, 0.36, 1] }}
         className="mt-8 max-w-xl text-base sm:text-lg text-slate-500 dark:text-slate-400 leading-relaxed font-light"
       >
-        Veltrix Studio is an elite product agency — we design systems, engineer
+        Zyvone Technologies is an elite product agency — we design systems, engineer
         performance, and craft brand identities that turn ambitious visions into
         living, breathing digital platforms.
       </motion.p>
@@ -263,7 +263,7 @@ function ServicesSection() {
             <SectionHeading
               eyebrow="What we do"
               title="Every discipline you need, under one roof."
-              subtitle="From research to release — Veltrix covers the full product lifecycle with dedicated specialists who care about the craft."
+              subtitle="From research to release — Zyvone covers the full product lifecycle with dedicated specialists who care about the craft."
             />
           </motion.div>
 
@@ -349,7 +349,7 @@ function ProductsSection() {
             <SectionHeading
               eyebrow="Featured products"
               title="Tools built by architects, for teams."
-              subtitle="Every Veltrix tool is battle-tested across real enterprise setups before it ships out."
+              subtitle="Every Zyvone tool is battle-tested across real enterprise setups before it ships out."
             />
             <Link
               to="/products"
@@ -501,7 +501,7 @@ function CTASection() {
           </h2>
 
           <p className="max-w-xl mx-auto text-sm sm:text-base text-white/70 leading-relaxed mb-10 font-light">
-            Whether you're an early-stage founder scaling an identity framework or launching an enterprise tool — Veltrix Studio brings the technical taste to execute.
+            Whether you're an early-stage founder scaling an identity framework or launching an enterprise tool — Zyvone Technologies brings the technical taste to execute.
           </p>
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-3 max-w-md mx-auto mb-10">

@@ -62,8 +62,8 @@ export default function Navbar() {
               <span className="relative h-2 w-2 rounded-full bg-indigo-600" />
             </span>
             <span className="text-base font-bold tracking-tight text-slate-900 dark:text-white font-sans">
-              Veltrix
-              <span className="text-indigo-600 dark:text-indigo-400"> Studio</span>
+              Zyvone
+              <span className="text-indigo-600 dark:text-indigo-400"> Technologies</span>
             </span>
           </Link>
 
