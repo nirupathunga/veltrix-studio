@@ -127,15 +127,15 @@ export const TESTIMONIALS_DATA = [
   },
 ];
 
-// ── Added FAQS_DATA Array to resolve Services page error ──
+// ── FAQS_DATA ──
 export const FAQS_DATA = [
   {
-    question: "How long does a standard release tier development take?",
-    answer: "Our standard milestone sprints run between 2 to 4 weeks depending on the atomic layout parameters required."
+    question: "How long does a typical project take?",
+    answer: "Most projects take between 2–4 weeks depending on scope and complexity. We'll give you a clear timeline after our initial conversation."
   },
   {
-    question: "Do you supply complete design file rights alongside the final code production build?",
-    answer: "Yes, 100%. Upon final checkout verification, full ownership parameters of all Figma assets and clean React files are fully assigned to your team."
+    question: "Do we get the design files and source code?",
+    answer: "Yes, absolutely. You own everything—all Figma files, React source code, and documentation. We hand it over ready to maintain and build on."
   }
 ];
 

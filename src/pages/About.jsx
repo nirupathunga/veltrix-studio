@@ -10,18 +10,18 @@ import { TEAM_DATA, STATS_DATA } from "../data/mockData";
 const CORE_VALUES = [
   {
     icon: Target,
-    title: "Precision Execution",
-    body: "We skip boilerplate approximations. Every atomic spacing token and dynamic state engine is engineered to perform cleanly under real workload loads."
+    title: "Meticulous Execution",
+    body: "No shortcuts. We obsess over performance, accessibility, and the details that separate good products from exceptional ones."
   },
   {
     icon: Award,
-    title: "Design Leadership",
-    body: "We establish frameworks that focus deeply on visual aesthetics, typography layout scales, and micro-interaction mechanics."
+    title: "Design Excellence",
+    body: "We create systems that are beautiful, purposeful, and scalable. Every interaction, color, and typeface choice serves a reason."
   },
   {
     icon: ShieldCheck,
-    title: "Transparent Craft",
-    body: "We prioritize clean code structures, predictable delivery pathways, and production-ready frontend assemblies without hidden overhead."
+    title: "Transparent Partnership",
+    body: "We communicate clearly, deliver on time, and give you full ownership of everything we create—code, designs, and documentation."
   }
 ];
 
@@ -55,16 +55,16 @@ export default function About() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div className="space-y-6">
             <span className="inline-flex items-center gap-1.5 text-xs font-bold text-indigo-600 dark:text-indigo-400 uppercase tracking-widest">
-              The Genesis Blueprint
+              Our Story
             </span>
             <h2 className="text-2xl sm:text-3xl font-bold text-slate-900 dark:text-white font-sans leading-tight">
-              Bridging the gap between creative design systems and production logic.
+              Design and engineering working in harmony.
             </h2>
             <p className="text-sm text-slate-500 dark:text-slate-400 font-light leading-relaxed">
-              Veltrix Studio was founded on a simple realization: the internet is saturated with generic, unoptimized themes that slow down user experiences and mask true brand potential. We changed the dynamic by bringing strict engineering practices into the visual layer.
+              We started Veltrix because most digital products look abandoned. Generic templates, slow performance, and poor attention to detail waste everyone's time. We believe your product deserves better—something built with care, optimized from the ground up, and aligned with your brand.
             </p>
             <p className="text-sm text-slate-500 dark:text-slate-400 font-light leading-relaxed">
-              We operate at the intersection of aesthetic precision and code clarity. Our products and custom agency builds provide teams with highly maintainable infrastructure engineered to perform.
+              We combine sharp design sensibility with rigorous engineering. The result is products that don't just look premium—they feel premium. Responsive, fast, accessible, and built to scale.
             </p>
           </div>
           

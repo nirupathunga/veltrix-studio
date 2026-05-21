@@ -14,13 +14,13 @@ const PRICING_TIERS = [
     name: "Growth Engine",
     price: "$1,499",
     period: "per release",
-    desc: "Perfect for early stage startups launching foundational MVPs.",
+    desc: "Perfect for early stage startups launching their first product.",
     features: [
-      "Custom core UI kit library (20+ components)",
-      "High-fidelity desktop/mobile interface mapping",
-      "Production-ready clean React source delivery",
-      "Standard vector layout handoffs",
-      "2 design revision feedback sprints"
+      "Custom component library (20+ pre-built components)",
+      "High-fidelity desktop and mobile designs",
+      "Production-ready React codebase",
+      "Comprehensive design documentation",
+      "Two rounds of revisions"
     ],
     popular: false
   },
@@ -28,23 +28,23 @@ const PRICING_TIERS = [
     name: "Scale Professional",
     price: "$3,899",
     period: "per release",
-    desc: "Our most chosen engineering path for rapid category growth.",
+    desc: "Our most popular package for growth-stage companies scaling fast.",
     features: [
-      "Full atomic structural custom design system",
-      "Up to 6 distinct production page layouts",
-      "Custom Framer Motion animation orchestrations",
-      "Core Web Vitals sub-second load tuning",
-      "Dedicated asynchronous Discord support channel",
-      "Comprehensive asset handoff validation"
+      "Complete custom design system with documentation",
+      "Up to 6 fully designed page templates",
+      "Custom animations and motion interactions",
+      "Performance optimization (sub-second load)",
+      "Dedicated Discord support channel",
+      "Full design file and code handoff"
     ],
     popular: true
   }
 ];
 
 const WORKFLOW_STEPS = [
-  { step: "01", title: "Discovery & Blueprinting", body: "We map user flow bottlenecks, evaluate platform goals, and construct explicit component design specifications." },
-  { step: "02", title: "Interface Modeling", body: "We assemble high-fidelity layouts using structured palettes, scalable tokens, and deep typographic hierarchy." },
-  { step: "03", title: "Frontend Synthesis", body: "We translate approved static mockups into modular, production-ready React structures running on custom Tailwind engines." }
+  { step: "01", title: "Strategy & Discovery", body: "We map your vision to user needs, define the feature set, and establish the design foundation. This sets the direction for everything that follows." },
+  { step: "02", title: "Design & Prototyping", body: "We create high-fidelity designs in Figma with fully documented components, interactions, and design systems for easy handoff." },
+  { step: "03", title: "Development & Launch", body: "We build production-ready React code with performance optimization, accessibility, and the polish you'd expect from a premium product." }
 ];
 
 export default function Services() {
@@ -61,13 +61,13 @@ export default function Services() {
         <div className="max-w-7xl mx-auto px-6 text-center space-y-4">
           <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold bg-indigo-500/10 text-indigo-600 dark:text-indigo-400 border border-indigo-500/20 uppercase tracking-wider">
             <Layers size={12} />
-            Capabilities & Models
+            Services
           </span>
           <h1 className="text-3xl sm:text-5xl font-bold tracking-tight text-slate-900 dark:text-white font-sans">
-            Our Production Frameworks
+            What We Do
           </h1>
           <p className="max-w-2xl mx-auto text-base text-slate-500 dark:text-slate-400 font-light">
-            We deliver complete technical execution — spanning from initial user interaction layout mapping to high-performance component architecture.
+            We handle the entire process: strategy, design, and development. From concept to a polished product in your hands.
           </p>
         </div>
       </div>
@@ -84,8 +84,8 @@ export default function Services() {
       {/* ── Workflow Process Timeline ── */}
       <div className="max-w-7xl mx-auto px-6 mt-28">
         <div className="text-center max-w-2xl mx-auto mb-16 space-y-3">
-          <span className="text-xs font-bold text-indigo-600 dark:text-indigo-400 uppercase tracking-widest">Our Method</span>
-          <h2 className="text-2xl sm:text-3xl font-bold text-slate-900 dark:text-white">The Engineering Timeline</h2>
+          <span className="text-xs font-bold text-indigo-600 dark:text-indigo-400 uppercase tracking-widest">Our Process</span>
+          <h2 className="text-2xl sm:text-3xl font-bold text-slate-900 dark:text-white">How We Work</h2>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 relative">
           {WORKFLOW_STEPS.map((item, idx) => (

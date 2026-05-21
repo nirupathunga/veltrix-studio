@@ -42,13 +42,13 @@ export default function Products() {
         <div className="max-w-7xl mx-auto px-6 text-center space-y-4">
           <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold bg-indigo-500/10 text-indigo-600 dark:text-indigo-400 border border-indigo-500/20 uppercase tracking-wider">
             <ShoppingBag size={12} />
-            Digital Registry
+            Products
           </span>
           <h1 className="text-3xl sm:text-5xl font-bold tracking-tight text-slate-900 dark:text-white font-sans">
-            Architected Tools & Assets
+            Ready-to-Use Components & Systems
           </h1>
           <p className="max-w-2xl mx-auto text-base text-slate-500 dark:text-slate-400 font-light">
-            Accelerate your engineering timelines with our collection of design systems, animation mechanics, and UI starter frames.
+            Premium design systems, animation libraries, and UI kits built for performance and scalability. Everything you need to move faster.
           </p>
         </div>
       </div>

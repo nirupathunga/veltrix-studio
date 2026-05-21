@@ -41,13 +41,13 @@ export default function Contact() {
         <div className="max-w-7xl mx-auto px-6 text-center space-y-4">
           <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold bg-indigo-500/10 text-indigo-600 dark:text-indigo-400 border border-indigo-500/20 uppercase tracking-wider">
             <MessageSquare size={12} />
-            Inbound Gateway
+            Contact
           </span>
           <h1 className="text-3xl sm:text-5xl font-bold tracking-tight text-slate-900 dark:text-white font-sans">
-            Initiate An Engagement
+            Let's Work Together
           </h1>
           <p className="max-w-2xl mx-auto text-base text-slate-500 dark:text-slate-400 font-light">
-            Whether launching a custom category-defining design platform or auditing code bundle setups — let's connect.
+            Whether you need a complete product redesign, a design system, or a performance audit—get in touch and let's talk about your vision.
           </p>
         </div>
       </div>
@@ -60,10 +60,10 @@ export default function Contact() {
           <div className="lg:col-span-5 space-y-8 flex flex-col justify-between py-2">
             <div className="space-y-6">
               <h2 className="text-xl sm:text-2xl font-bold text-slate-900 dark:text-white font-sans tracking-tight">
-                Direct Communication Infrastructure
+                Reach Out
               </h2>
               <p className="text-sm text-slate-500 dark:text-slate-400 font-light leading-relaxed">
-                Skip repetitive scheduling loops. Send us your project constraints or request an instant technical validation outline directly through our asynchronous submission desk.
+                Tell us about your project. Whether it's early stage or you need to talk through specifics, we're here to listen and help you figure out next steps.
               </p>
             </div>
 
@@ -77,7 +77,7 @@ export default function Contact() {
                   <Mail size={16} />
                 </div>
                 <div className="space-y-0.5">
-                  <h3 className="text-xs font-bold uppercase text-slate-400 dark:text-slate-500 tracking-wider">Electronic Mail</h3>
+                  <h3 className="text-xs font-bold uppercase text-slate-400 dark:text-slate-500 tracking-wider">Email</h3>
                   <p className="text-sm font-semibold text-slate-900 dark:text-white font-sans group-hover:text-indigo-500 transition-colors duration-200">hello@veltrix.studio</p>
                   <p className="text-xs text-slate-400 dark:text-slate-500 font-light mt-0.5">Response tracked inside 24 standard business hours.</p>
                 </div>

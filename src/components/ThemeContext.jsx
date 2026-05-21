@@ -12,15 +12,13 @@ export const ThemeProvider = ({ children }) => {
 
   useEffect(() => {
     const root = window.document.documentElement;
-    if (isDark) {
-      root.classList.add('dark');
-      document.body.classList.add('dark');
-      localStorage.setItem('theme', 'dark');
-    } else {
-      root.classList.remove('dark');
-      document.body.classList.remove('dark');
-      localStorage.setItem('theme', 'light');
-    }
+    // Explicitly clear both light and dark classes before applying the new one
+    root.classList.remove('light', 'dark');
+    // Apply the active theme class
+    const activeTheme = isDark ? 'dark' : 'light';
+    root.classList.add(activeTheme);
+    // Persist preference
+    localStorage.setItem('theme', activeTheme);
   }, [isDark]);
 
   const toggleTheme = () => setIsDark(!isDark);
