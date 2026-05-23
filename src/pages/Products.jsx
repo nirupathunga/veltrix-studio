@@ -35,12 +35,12 @@ export default function Products() {
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
       transition={{ duration: 0.45 }}
-      className="min-h-screen bg-white dark:bg-slate-950 pb-24"
+      className="min-h-screen bg-gradient-to-b from-white via-neutral-50 to-white dark:from-black dark:via-slate-950 dark:to-black pb-24"
     >
       {/* ── Header Section ── */}
-      <div className="relative isolate pt-24 pb-12 border-b border-slate-100 dark:border-slate-900/60 bg-slate-50/50 dark:bg-slate-900/10">
+      <div className="relative isolate pt-24 pb-12 border-b border-slate-200 dark:border-slate-800 bg-gradient-to-b from-neutral-50 to-white dark:from-slate-900/20 dark:to-black">
         <div className="max-w-7xl mx-auto px-6 text-center space-y-4">
-          <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold bg-indigo-500/10 text-indigo-600 dark:text-indigo-400 border border-indigo-500/20 uppercase tracking-wider">
+          <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold bg-slate-100 dark:bg-slate-900 text-black dark:text-white border border-slate-300 dark:border-slate-700 uppercase tracking-wider">
             <ShoppingBag size={12} />
             Products
           </span>
@@ -65,7 +65,7 @@ export default function Products() {
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
               placeholder="Search catalog products..."
-              className="w-full pl-10 pr-4 py-2.5 rounded-xl border border-slate-200 dark:border-slate-800 bg-slate-50/50 dark:bg-slate-950/50 text-sm outline-none text-slate-900 dark:text-white placeholder-slate-400 focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500/30 transition-all duration-200"
+              className="w-full pl-10 pr-4 py-2.5 rounded-xl border border-slate-300 dark:border-slate-700 bg-slate-50 dark:bg-slate-900 text-sm outline-none text-slate-900 dark:text-white placeholder-slate-500 dark:placeholder-slate-400 focus:border-black dark:focus:border-white focus:ring-1 focus:ring-black/20 dark:focus:ring-white/20 transition-all duration-200"
             />
             {searchQuery && (
               <button 
@@ -92,8 +92,8 @@ export default function Products() {
                   className={`
                     px-4 py-2 text-xs font-semibold rounded-xl tracking-wide transition-all duration-200 cursor-pointer
                     ${isActive 
-                      ? "bg-indigo-600 text-white shadow-md shadow-indigo-600/15" 
-                      : "bg-slate-50 hover:bg-slate-100 dark:bg-slate-950 dark:hover:bg-slate-900 text-slate-600 dark:text-slate-400 border border-slate-200/60 dark:border-slate-800/60"}
+                      ? "bg-black dark:bg-white text-white dark:text-black shadow-md shadow-black/20 dark:shadow-white/10" 
+                      : "bg-slate-100 hover:bg-slate-200 dark:bg-slate-900 dark:hover:bg-slate-800 text-slate-900 dark:text-white border border-slate-300/60 dark:border-slate-700/60"}
                   `}
                 >
                   {category}
@@ -126,7 +126,7 @@ export default function Products() {
           <motion.div
             initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
-            className="text-center py-20 px-6 rounded-2xl border border-dashed border-slate-200 dark:border-slate-800 max-w-md mx-auto"
+            className="text-center py-20 px-6 rounded-2xl border border-dashed border-slate-300 dark:border-slate-700 max-w-md mx-auto bg-slate-50/50 dark:bg-slate-900/30"
           >
             <div className="h-12 w-12 rounded-xl bg-slate-100 dark:bg-slate-900 text-slate-400 dark:text-slate-600 flex items-center justify-center mx-auto mb-4">
               <Search size={20} />
@@ -137,7 +137,7 @@ export default function Products() {
             </p>
             <button
               onClick={resetFilters}
-              className="px-4 py-2 text-xs font-semibold text-white bg-indigo-600 hover:bg-indigo-500 rounded-lg shadow-md transition-all duration-200 cursor-pointer"
+              className="px-4 py-2 text-xs font-semibold text-white bg-black hover:bg-slate-900 dark:bg-white dark:hover:bg-slate-100 dark:text-black rounded-lg shadow-md transition-all duration-200 cursor-pointer"
             >
               Reset Search Parameters
             </button>

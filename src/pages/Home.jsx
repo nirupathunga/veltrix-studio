@@ -51,7 +51,7 @@ function SectionHeading({ eyebrow, title, subtitle, center = false }) {
   return (
     <div className={`mb-12 ${center ? "text-center mx-auto max-w-2xl" : ""}`}>
       {eyebrow && (
-        <span className="inline-flex items-center gap-1.5 mb-3 rounded-full border border-indigo-200 dark:border-indigo-800/60 bg-indigo-50 dark:bg-indigo-950/50 px-3 py-1 text-[11px] font-semibold tracking-[0.1em] uppercase text-indigo-600 dark:text-indigo-400">
+        <span className="inline-flex items-center gap-1.5 mb-3 rounded-full border border-slate-300 dark:border-slate-700 bg-slate-100 dark:bg-slate-900 px-3 py-1 text-[11px] font-semibold tracking-[0.1em] uppercase text-black dark:text-white">
           <Sparkles size={10} strokeWidth={2.5} />
           {eyebrow}
         </span>
@@ -75,7 +75,7 @@ export default function Home() {
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
       transition={{ duration: 0.45, ease: "easeOut" }}
-      className="min-h-screen bg-white dark:bg-slate-950 overflow-x-hidden"
+      className="min-h-screen bg-gradient-to-b from-white via-neutral-50 to-white dark:from-black dark:via-slate-950 dark:to-black overflow-x-hidden"
     >
       <HeroSection />
       <ServicesSection />
@@ -96,9 +96,9 @@ function HeroSection() {
       
       {/* Background gradients and mesh overlays */}
       <div aria-hidden="true" className="pointer-events-none absolute inset-0 -z-10 overflow-hidden">
-        <div className="absolute -top-40 -left-40 h-[600px] w-[600px] rounded-full bg-indigo-400/20 dark:bg-indigo-600/15 blur-[120px]" />
-        <div className="absolute -top-20 right-0 h-[500px] w-[500px] rounded-full bg-violet-400/20 dark:bg-violet-600/15 blur-[100px]" />
-        <div className="absolute bottom-0 left-1/2 -translate-x-1/2 h-[400px] w-[700px] rounded-full bg-fuchsia-300/15 dark:bg-fuchsia-700/10 blur-[100px]" />
+        <div className="absolute -top-40 -left-40 h-[600px] w-[600px] rounded-full bg-slate-200/10 dark:bg-slate-700/10 blur-[120px]" />
+        <div className="absolute -top-20 right-0 h-[500px] w-[500px] rounded-full bg-slate-200/10 dark:bg-slate-700/10 blur-[100px]" />
+        <div className="absolute bottom-0 left-1/2 -translate-x-1/2 h-[400px] w-[700px] rounded-full bg-slate-200/8 dark:bg-slate-700/8 blur-[100px]" />
         
         <svg className="absolute inset-0 h-full w-full opacity-[0.035] dark:opacity-[0.04]" xmlns="http://www.w3.org/2000/svg">
           <defs>
@@ -116,7 +116,7 @@ function HeroSection() {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.55, delay: 0.1, ease: [0.22, 1, 0.36, 1] }}
       >
-        <span className="inline-flex items-center gap-2 rounded-full border border-indigo-200/80 dark:border-indigo-800/50 bg-white/80 dark:bg-slate-900/80 backdrop-blur-sm px-4 py-1.5 text-xs font-semibold tracking-widest uppercase text-indigo-600 dark:text-indigo-400 shadow-sm shadow-indigo-100 dark:shadow-none mb-8">
+        <span className="inline-flex items-center gap-2 rounded-full border border-slate-300 dark:border-slate-700 bg-white/80 dark:bg-slate-900/80 backdrop-blur-sm px-4 py-1.5 text-xs font-semibold tracking-widest uppercase text-black dark:text-white shadow-sm shadow-black/5 dark:shadow-none mb-8">
           <TrendingUp size={12} strokeWidth={2.5} />
           Product · Design · Engineering
         </span>
@@ -130,20 +130,20 @@ function HeroSection() {
         className="max-w-4xl text-4xl sm:text-6xl md:text-7xl font-bold tracking-tight leading-[1.08] font-sans"
       >
         <span className="text-slate-900 dark:text-white">We build </span>
-        <span className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500">
+        <span className="text-slate-900 dark:text-white">
           digital experiences
         </span>
         <br className="hidden sm:block" />
         <span className="text-slate-900 dark:text-white"> that </span>
         <span className="relative inline-block">
-          <span className="text-transparent bg-clip-text bg-gradient-to-r from-violet-500 via-fuchsia-500 to-indigo-500">
+          <span className="text-slate-900 dark:text-white">
             define categories.
           </span>
           <motion.span
             initial={{ scaleX: 0 }}
             animate={{ scaleX: 1 }}
             transition={{ duration: 0.65, delay: 0.75, ease: [0.22, 1, 0.36, 1] }}
-            className="absolute -bottom-2 left-0 h-[3px] w-full origin-left rounded-full bg-gradient-to-r from-violet-500 via-fuchsia-500 to-indigo-500 opacity-60"
+            className="absolute -bottom-2 left-0 h-[3px] w-full origin-left rounded-full bg-black dark:bg-white opacity-60"
           />
         </span>
       </motion.h1>
@@ -171,9 +171,9 @@ function HeroSection() {
           className="
             group inline-flex items-center gap-2
             rounded-xl px-7 py-3.5 text-sm font-semibold
-            bg-indigo-600 text-white cursor-pointer
-            shadow-lg shadow-indigo-500/30
-            hover:shadow-xl hover:shadow-indigo-500/40
+            bg-black dark:bg-white text-white dark:text-black cursor-pointer
+            shadow-lg shadow-black/20 dark:shadow-white/10
+            hover:shadow-xl hover:shadow-black/30 dark:hover:shadow-white/20
             hover:-translate-y-0.5
             transition-all duration-200
           "
@@ -190,13 +190,13 @@ function HeroSection() {
             border border-slate-200 dark:border-slate-800
             bg-white/80 dark:bg-slate-900/80 backdrop-blur-sm
             text-slate-800 dark:text-slate-100 cursor-pointer
-            hover:border-indigo-300 dark:hover:border-indigo-700
+            hover:border-slate-400 dark:hover:border-slate-600
             hover:bg-white dark:hover:bg-slate-900
             hover:-translate-y-0.5 shadow-sm
             transition-all duration-200
           "
         >
-          <CalendarCheck size={15} strokeWidth={2} className="text-indigo-500" />
+          <CalendarCheck size={15} strokeWidth={2} className="text-black dark:text-white" />
           Book a Strategy Call
         </Link>
       </motion.div>
@@ -236,7 +236,7 @@ function HeroSection() {
             <motion.div
               animate={{ y: [0, 10, 0] }}
               transition={{ duration: 1.4, repeat: Infinity, ease: "easeInOut" }}
-              className="h-2 w-1 rounded-full bg-indigo-500"
+              className="h-2 w-1 rounded-full bg-black dark:bg-white"
             />
           </div>
         </div>
@@ -252,7 +252,7 @@ function ServicesSection() {
   const { ref, inView } = useReveal();
 
   return (
-    <section ref={ref} className="py-24 px-5 sm:px-8 bg-slate-50/70 dark:bg-slate-900/30">
+    <section ref={ref} className="py-24 px-5 sm:px-8 bg-gradient-to-b from-neutral-50 to-white dark:from-slate-900/20 dark:to-black">
       <div className="max-w-7xl mx-auto">
         <motion.div
           variants={staggerContainer}
@@ -290,21 +290,21 @@ function StatsSection() {
   const { ref, inView } = useReveal(0.2);
 
   return (
-    <section ref={ref} className="py-24 px-5 sm:px-8 bg-white dark:bg-slate-950">
+    <section ref={ref} className="py-24 px-5 sm:px-8 bg-white dark:bg-black">
       <div className="max-w-7xl mx-auto">
         <div className="mb-16 flex items-center gap-4">
-          <div className="h-px flex-1 bg-gradient-to-r from-transparent via-indigo-200 dark:via-indigo-800/60 to-transparent" />
-          <span className="flex-shrink-0 rounded-full border border-indigo-200 dark:border-indigo-800/60 bg-indigo-50 dark:bg-indigo-950/50 px-3 py-0.5 text-[10px] font-semibold tracking-[0.12em] uppercase text-indigo-600 dark:text-indigo-400">
+          <div className="h-px flex-1 bg-gradient-to-r from-transparent via-slate-300 dark:via-slate-700 to-transparent" />
+          <span className="flex-shrink-0 rounded-full border border-slate-300 dark:border-slate-700 bg-slate-100 dark:bg-slate-900 px-3 py-0.5 text-[10px] font-semibold tracking-[0.12em] uppercase text-black dark:text-white">
             By the numbers
           </span>
-          <div className="h-px flex-1 bg-gradient-to-r from-transparent via-indigo-200 dark:via-indigo-800/60 to-transparent" />
+          <div className="h-px flex-1 bg-gradient-to-r from-transparent via-slate-300 dark:via-slate-700 to-transparent" />
         </div>
 
         <motion.div
           variants={staggerContainer}
           initial="hidden"
           animate={inView ? "visible" : "hidden"}
-          className="grid grid-cols-2 lg:grid-cols-4 gap-px bg-slate-100 dark:bg-slate-800/60 rounded-2xl overflow-hidden border border-slate-100 dark:border-slate-800/60 shadow-sm"
+          className="grid grid-cols-2 lg:grid-cols-4 gap-px bg-slate-200 dark:bg-slate-800/60 rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-800/60 shadow-sm"
         >
           {STATS_DATA.map((stat, i) => (
             <motion.div
@@ -312,12 +312,12 @@ function StatsSection() {
               variants={fadeUp}
               className="
                 group flex flex-col items-center justify-center text-center
-                bg-white dark:bg-slate-950 px-6 py-10
-                hover:bg-indigo-50/60 dark:hover:bg-indigo-950/30
+                bg-white dark:bg-black px-6 py-10
+                hover:bg-slate-50 dark:hover:bg-slate-900/50
                 transition-colors duration-300
               "
             >
-              <span className="text-4xl sm:text-5xl font-bold tracking-tight text-transparent bg-clip-text bg-gradient-to-br from-indigo-600 via-violet-600 to-fuchsia-600 leading-none mb-3 font-sans">
+              <span className="text-4xl sm:text-5xl font-bold tracking-tight text-black dark:text-white leading-none mb-3 font-sans">
                 {stat.value}
               </span>
               <span className="text-xs font-medium tracking-wide text-slate-500 dark:text-slate-400 leading-snug max-w-[7rem]">
@@ -338,7 +338,7 @@ function ProductsSection() {
   const { ref, inView } = useReveal();
 
   return (
-    <section ref={ref} className="py-24 px-5 sm:px-8 bg-slate-50/70 dark:bg-slate-900/30">
+    <section ref={ref} className="py-24 px-5 sm:px-8 bg-gradient-to-b from-neutral-50 to-white dark:from-slate-900/20 dark:to-black">
       <div className="max-w-7xl mx-auto">
         <motion.div
           variants={staggerContainer}
@@ -355,8 +355,8 @@ function ProductsSection() {
               to="/products"
               className="
                 group mb-[3px] inline-flex flex-shrink-0 items-center gap-1.5
-                text-sm font-semibold text-indigo-600 dark:text-indigo-400 cursor-pointer
-                hover:text-indigo-700 dark:hover:text-indigo-300
+                text-sm font-semibold text-black dark:text-white cursor-pointer
+                hover:text-slate-700 dark:hover:text-slate-300
                 transition-colors duration-200 self-start sm:self-auto
               "
             >
@@ -388,7 +388,7 @@ function TestimonialsSection() {
   const { ref, inView } = useReveal();
 
   return (
-    <section ref={ref} className="py-24 px-5 sm:px-8 bg-white dark:bg-slate-950">
+    <section ref={ref} className="py-24 px-5 sm:px-8 bg-white dark:bg-black">
       <div className="max-w-7xl mx-auto">
         <motion.div
           variants={staggerContainer}

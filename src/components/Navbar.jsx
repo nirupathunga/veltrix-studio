@@ -6,9 +6,9 @@ import ThemeToggle from "./ThemeToggle";
 
 const NAV_LINKS = [
   { label: "Home",     to: "/" },
+  { label: "About",    to: "/about" },
   { label: "Products", to: "/products" },
   { label: "Services", to: "/services" },
-  { label: "About",    to: "/about" },
   { label: "Contact",  to: "/contact" },
 ];
 
@@ -29,8 +29,8 @@ export default function Navbar() {
     return () => { document.body.style.overflow = ""; };
   }, [open]);
 
-  const activeClass   = "text-indigo-600 dark:text-indigo-400 font-semibold";
-  const inactiveClass = "text-slate-600 dark:text-slate-300 hover:text-indigo-600 dark:hover:text-indigo-400";
+  const activeClass   = "text-black dark:text-white font-semibold";
+  const inactiveClass = "text-slate-600 dark:text-slate-400 hover:text-black dark:hover:text-white";
 
   return (
     <header
@@ -45,7 +45,7 @@ export default function Navbar() {
       `}
     >
       {/* ── Thin premium brand gradient accent rule ── */}
-      <div className="h-[2px] w-full bg-gradient-to-r from-indigo-500 via-violet-500 to-fuchsia-500" />
+      <div className="h-[2px] w-full bg-black dark:bg-white" />
 
       <div className="max-w-7xl mx-auto px-5 sm:px-8 lg:px-12">
         <div className="flex items-center justify-between h-16">
@@ -57,13 +57,13 @@ export default function Navbar() {
             className="flex items-center gap-2.5 group select-none"
           >
             <span className="relative flex h-7 w-7 items-center justify-center">
-              <span className="absolute inset-0 rotate-45 rounded-sm bg-indigo-600 group-hover:rotate-[55deg] transition-transform duration-300" />
+              <span className="absolute inset-0 rotate-45 rounded-sm bg-black dark:bg-white group-hover:rotate-[55deg] transition-transform duration-300" />
               <span className="absolute inset-[3px] rotate-45 rounded-sm bg-white dark:bg-slate-950 group-hover:rotate-[55deg] transition-transform duration-300" />
-              <span className="relative h-2 w-2 rounded-full bg-indigo-600" />
+              <span className="relative h-2 w-2 rounded-full bg-black dark:bg-white" />
             </span>
             <span className="text-base font-bold tracking-tight text-slate-900 dark:text-white font-sans">
               Zyvone
-              <span className="text-indigo-600 dark:text-indigo-400"> Technologies</span>
+              <span className="text-slate-600 dark:text-slate-400"> Technologies</span>
             </span>
           </Link>
 
@@ -81,7 +81,7 @@ export default function Navbar() {
                     {label}
                     <span
                       className={`
-                        absolute -bottom-0.5 left-0 h-[1.5px] bg-indigo-600 dark:bg-indigo-400
+                        absolute -bottom-0.5 left-0 h-[1.5px] bg-black dark:bg-white
                         transition-all duration-300
                         ${isActive ? "w-full" : "w-0 group-hover:w-full"}
                       `}
@@ -100,11 +100,11 @@ export default function Navbar() {
               className="
                 inline-flex items-center gap-1.5
                 rounded-lg px-4 py-2 text-sm font-semibold tracking-wide
-                bg-indigo-600 hover:bg-indigo-700 active:bg-indigo-800
-                text-white
-                shadow-md shadow-indigo-600/20
+                bg-black hover:bg-slate-900 active:bg-slate-950 dark:bg-white dark:hover:bg-slate-100 dark:active:bg-slate-200
+                text-white dark:text-black
+                shadow-md shadow-black/20 dark:shadow-white/10
                 transition-all duration-200
-                hover:shadow-lg hover:shadow-indigo-600/30
+                hover:shadow-lg hover:shadow-black/30 dark:hover:shadow-white/20
                 hover:-translate-y-0.5
               "
             >
@@ -158,14 +158,14 @@ export default function Navbar() {
                 flex items-center gap-3 px-3 py-3 rounded-lg text-sm font-medium
                 transition-colors duration-150
                 ${isActive
-                  ? "bg-indigo-50 dark:bg-indigo-950/50 text-indigo-600 dark:text-indigo-400"
+                  ? "bg-slate-100 dark:bg-slate-900 text-black dark:text-white"
                   : "text-slate-700 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800/60"}
               `}
             >
               {({ isActive }) => (
                 <>
                   <span className={`h-1.5 w-1.5 rounded-full flex-shrink-0 transition-opacity duration-150 ${
-                    isActive ? "bg-indigo-600 dark:bg-indigo-400 opacity-100" : "bg-transparent opacity-0"
+                    isActive ? "bg-black dark:bg-white opacity-100" : "bg-transparent opacity-0"
                   }`} />
                   {label}
                 </>

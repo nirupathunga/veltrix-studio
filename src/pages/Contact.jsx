@@ -34,12 +34,12 @@ export default function Contact() {
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
       transition={{ duration: 0.45 }}
-      className="min-h-screen bg-white dark:bg-slate-950 pb-24"
+      className="min-h-screen bg-gradient-to-b from-white via-neutral-50 to-white dark:from-black dark:via-slate-950 dark:to-black pb-24"
     >
       {/* ── Page Header ── */}
-      <div className="relative isolate pt-24 pb-12 border-b border-slate-100 dark:border-slate-900/60 bg-slate-50/50 dark:bg-slate-900/10">
+      <div className="relative isolate pt-24 pb-12 border-b border-slate-200 dark:border-slate-800 bg-gradient-to-b from-neutral-50 to-white dark:from-slate-900/20 dark:to-black">
         <div className="max-w-7xl mx-auto px-6 text-center space-y-4">
-          <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold bg-indigo-500/10 text-indigo-600 dark:text-indigo-400 border border-indigo-500/20 uppercase tracking-wider">
+          <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold bg-slate-100 dark:bg-slate-900 text-black dark:text-white border border-slate-300 dark:border-slate-700 uppercase tracking-wider">
             <MessageSquare size={12} />
             Contact
           </span>
@@ -71,20 +71,20 @@ export default function Contact() {
             <div className="space-y-4 flex-1 my-8 lg:my-0">
               <a 
                 href="mailto:hello@veltrix.studio"
-                className="group flex items-start gap-4 p-5 rounded-2xl border border-slate-100 dark:border-slate-800/60 bg-slate-50/40 dark:bg-slate-900/20 shadow-sm hover:border-indigo-500 transition-all duration-200"
+                className="group flex items-start gap-4 p-5 rounded-2xl border border-slate-300 dark:border-slate-700 bg-slate-50 dark:bg-slate-900 shadow-sm hover:border-slate-400 dark:hover:border-slate-600 transition-all duration-200"
               >
-                <div className="h-10 w-10 rounded-xl bg-indigo-500/10 text-indigo-500 flex items-center justify-center flex-shrink-0 group-hover:scale-105 transition-transform duration-200">
+                <div className="h-10 w-10 rounded-xl bg-black/10 dark:bg-white/10 text-black dark:text-white flex items-center justify-center flex-shrink-0 group-hover:scale-105 transition-transform duration-200">
                   <Mail size={16} />
                 </div>
                 <div className="space-y-0.5">
                   <h3 className="text-xs font-bold uppercase text-slate-400 dark:text-slate-500 tracking-wider">Email</h3>
-                  <p className="text-sm font-semibold text-slate-900 dark:text-white font-sans group-hover:text-indigo-500 transition-colors duration-200">hello@veltrix.studio</p>
+                  <p className="text-sm font-semibold text-slate-900 dark:text-white font-sans group-hover:text-slate-700 dark:group-hover:text-slate-300 transition-colors duration-200">hello@veltrix.studio</p>
                   <p className="text-xs text-slate-400 dark:text-slate-500 font-light mt-0.5">Response tracked inside 24 standard business hours.</p>
                 </div>
               </a>
 
               <div className="flex items-start gap-4 p-5 rounded-2xl border border-slate-100 dark:border-slate-800/60 bg-slate-50/40 dark:bg-slate-900/20 shadow-sm">
-                <div className="h-10 w-10 rounded-xl bg-indigo-500/10 text-indigo-500 flex items-center justify-center flex-shrink-0">
+                <div className="h-10 w-10 rounded-xl bg-black/10 dark:bg-white/10 text-black dark:text-white flex items-center justify-center flex-shrink-0">
                   <MapPin size={16} />
                 </div>
                 <div className="space-y-0.5">
@@ -128,7 +128,7 @@ export default function Contact() {
                           value={formState.name}
                           onChange={handleChange}
                           placeholder="e.g. Marcus Aurelius"
-                          className="w-full px-4 py-3 text-sm rounded-xl border border-slate-200 dark:border-slate-800 bg-slate-50/50 dark:bg-slate-950/50 outline-none text-slate-900 dark:text-white focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500/30 transition-all duration-200"
+                          className="w-full px-4 py-3 text-sm rounded-xl border border-slate-300 dark:border-slate-700 bg-slate-50 dark:bg-slate-900 outline-none text-slate-900 dark:text-white focus:border-black dark:focus:border-white focus:ring-1 focus:ring-black/20 dark:focus:ring-white/20 transition-all duration-200"
                         />
                       </div>
                       <div className="space-y-1.5">
@@ -140,7 +140,7 @@ export default function Contact() {
                           value={formState.email}
                           onChange={handleChange}
                           placeholder="your@company.com"
-                          className="w-full px-4 py-3 text-sm rounded-xl border border-slate-200 dark:border-slate-800 bg-slate-50/50 dark:bg-slate-950/50 outline-none text-slate-900 dark:text-white focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500/30 transition-all duration-200"
+                          className="w-full px-4 py-3 text-sm rounded-xl border border-slate-300 dark:border-slate-700 bg-slate-50 dark:bg-slate-900 outline-none text-slate-900 dark:text-white focus:border-black dark:focus:border-white focus:ring-1 focus:ring-black/20 dark:focus:ring-white/20 transition-all duration-200"
                         />
                       </div>
                     </div>
@@ -151,7 +151,7 @@ export default function Contact() {
                         name="projectType"
                         value={formState.projectType}
                         onChange={handleChange}
-                        className="w-full px-4 py-3 text-sm rounded-xl border border-slate-200 dark:border-slate-800 bg-slate-50/50 dark:bg-slate-950/50 outline-none text-slate-900 dark:text-white focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500/30 transition-all duration-200"
+                        className="w-full px-4 py-3 text-sm rounded-xl border border-slate-300 dark:border-slate-700 bg-slate-50 dark:bg-slate-900 outline-none text-slate-900 dark:text-white focus:border-black dark:focus:border-white focus:ring-1 focus:ring-black/20 dark:focus:ring-white/20 transition-all duration-200"
                       >
                         <option value="Design System">Atomic Design System Architecture</option>
                         <option value="Motion Preset">Framer Motion Preset Engineering</option>
@@ -169,14 +169,14 @@ export default function Contact() {
                         value={formState.message}
                         onChange={handleChange}
                         placeholder="Detail your product scale expectations, timing scope, or asset targets..."
-                        className="w-full px-4 py-3 text-sm rounded-xl border border-slate-200 dark:border-slate-800 bg-slate-50/50 dark:bg-slate-950/50 outline-none text-slate-900 dark:text-white focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500/30 transition-all duration-200 resize-none"
+                        className="w-full px-4 py-3 text-sm rounded-xl border border-slate-300 dark:border-slate-700 bg-slate-50 dark:bg-slate-900 outline-none text-slate-900 dark:text-white focus:border-black dark:focus:border-white focus:ring-1 focus:ring-black/20 dark:focus:ring-white/20 transition-all duration-200 resize-none"
                       />
                     </div>
 
                     <button
                       type="submit"
                       disabled={loading}
-                      className="w-full py-3.5 rounded-xl font-semibold text-xs text-white bg-indigo-600 hover:bg-indigo-500 active:bg-indigo-700 uppercase tracking-widest shadow-md shadow-indigo-600/10 transition-all duration-200 flex items-center justify-center gap-2 cursor-pointer disabled:opacity-50 disabled:cursor-not-allowed hover:-translate-y-0.5 disabled:hover:translate-y-0"
+                      className="w-full py-3.5 rounded-xl font-semibold text-xs text-white dark:text-black bg-black dark:bg-white hover:bg-slate-900 dark:hover:bg-slate-100 active:bg-slate-950 dark:active:bg-slate-200 uppercase tracking-widest shadow-md shadow-black/10 dark:shadow-white/10 transition-all duration-200 flex items-center justify-center gap-2 cursor-pointer disabled:opacity-50 disabled:cursor-not-allowed hover:-translate-y-0.5 disabled:hover:translate-y-0"
                     >
                       {loading ? (
                         <>

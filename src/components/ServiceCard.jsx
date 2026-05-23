@@ -22,10 +22,10 @@ export default function ServiceCard({ service }) {
         group relative flex flex-col
         rounded-2xl overflow-hidden
         bg-white dark:bg-slate-900
-        border border-slate-100 dark:border-slate-800/60
-        shadow-md hover:shadow-xl hover:shadow-indigo-500/10
+        border border-slate-200 dark:border-slate-800
+        shadow-md hover:shadow-xl hover:shadow-black/10 dark:hover:shadow-white/10
         transition-all duration-300 hover:scale-[1.03]
-        focus-within:ring-2 focus-within:ring-indigo-500/40
+        focus-within:ring-2 focus-within:ring-black/20 dark:focus-within:ring-white/20
         p-6
       "
     >
@@ -35,8 +35,8 @@ export default function ServiceCard({ service }) {
         className="
           pointer-events-none absolute top-0 right-0
           h-24 w-24 rounded-bl-[4rem]
-          bg-gradient-to-bl from-indigo-50 to-transparent
-          dark:from-indigo-950/30 dark:to-transparent
+          bg-gradient-to-bl from-slate-100 to-transparent
+          dark:from-slate-800/30 dark:to-transparent
           transition-opacity duration-300
           group-hover:opacity-80
         "
@@ -48,12 +48,12 @@ export default function ServiceCard({ service }) {
           className="
             flex items-center justify-center
             h-12 w-12 rounded-xl
-            bg-indigo-50 dark:bg-indigo-950/50
-            text-indigo-600 dark:text-indigo-400
-            shadow-sm shadow-indigo-200/60 dark:shadow-indigo-900/40
+            bg-black dark:bg-white
+            text-white dark:text-black
+            shadow-sm shadow-black/20 dark:shadow-white/10
             transition-all duration-300
-            group-hover:scale-110 group-hover:shadow-md group-hover:shadow-indigo-300/50
-            dark:group-hover:shadow-indigo-800/40
+            group-hover:scale-110 group-hover:shadow-md group-hover:shadow-black/30
+            dark:group-hover:shadow-white/20
           "
           aria-hidden="true"
         >
@@ -62,8 +62,8 @@ export default function ServiceCard({ service }) {
 
         {/* Subtle motion pulse indicators */}
         <span className="absolute -top-0.5 -right-0.5 flex h-2.5 w-2.5">
-          <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-indigo-400 opacity-0 group-hover:opacity-60 transition-opacity duration-300" />
-          <span className="relative inline-flex h-2.5 w-2.5 rounded-full bg-indigo-500 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+          <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-slate-600 dark:bg-slate-400 opacity-0 group-hover:opacity-60 transition-opacity duration-300" />
+          <span className="relative inline-flex h-2.5 w-2.5 rounded-full bg-black dark:bg-white opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
         </span>
       </div>
 
@@ -78,7 +78,7 @@ export default function ServiceCard({ service }) {
       </p>
 
       {/* ── Divider ── */}
-      <div className="mb-4 h-px w-full bg-gradient-to-r from-slate-100 via-indigo-100/60 to-transparent dark:from-slate-800 dark:via-indigo-950/30 dark:to-transparent" />
+      <div className="mb-4 h-px w-full bg-gradient-to-r from-slate-200 via-slate-200/60 to-transparent dark:from-slate-800 dark:via-slate-800/30 dark:to-transparent" />
 
       {/* ── Feature list loop ── */}
       {features.length > 0 && (
@@ -93,10 +93,10 @@ export default function ServiceCard({ service }) {
                   mt-0.5 flex-shrink-0
                   flex items-center justify-center
                   h-4 w-4 rounded-full
-                  bg-indigo-100 dark:bg-indigo-950/70
-                  text-indigo-600 dark:text-indigo-400
+                  bg-black dark:bg-white
+                  text-white dark:text-black
                   transition-colors duration-200
-                  group-hover/item:bg-indigo-200 dark:group-hover/item:bg-indigo-900/80
+                  group-hover/item:bg-slate-800 dark:group-hover/item:bg-slate-200
                 "
                 aria-hidden="true"
               >

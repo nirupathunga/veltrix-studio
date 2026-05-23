@@ -32,12 +32,12 @@ export default function About() {
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
       transition={{ duration: 0.45 }}
-      className="min-h-screen bg-white dark:bg-slate-950 pb-24"
+      className="min-h-screen bg-gradient-to-b from-white via-neutral-50 to-white dark:from-black dark:via-slate-950 dark:to-black pb-24"
     >
       {/* ── Page Header ── */}
-      <div className="relative isolate pt-24 pb-12 border-b border-slate-100 dark:border-slate-900/60 bg-slate-50/50 dark:bg-slate-900/10">
+      <div className="relative isolate pt-24 pb-12 border-b border-slate-200 dark:border-slate-800 bg-gradient-to-b from-neutral-50 to-white dark:from-slate-900/20 dark:to-black">
         <div className="max-w-7xl mx-auto px-6 text-center space-y-4">
-          <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold bg-indigo-500/10 text-indigo-600 dark:text-indigo-400 border border-indigo-500/20 uppercase tracking-wider">
+          <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold bg-slate-100 dark:bg-slate-900 text-black dark:text-white border border-slate-300 dark:border-slate-700 uppercase tracking-wider">
             <Users size={12} />
             Our Studio Narrative
           </span>
@@ -54,7 +54,7 @@ export default function About() {
       <div className="max-w-7xl mx-auto px-6 mt-20">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div className="space-y-6">
-            <span className="inline-flex items-center gap-1.5 text-xs font-bold text-indigo-600 dark:text-indigo-400 uppercase tracking-widest">
+            <span className="inline-flex items-center gap-1.5 text-xs font-bold text-black dark:text-white uppercase tracking-widest">
               Our Story
             </span>
             <h2 className="text-2xl sm:text-3xl font-bold text-slate-900 dark:text-white font-sans leading-tight">
@@ -68,7 +68,7 @@ export default function About() {
             </p>
           </div>
           
-          <div className="relative aspect-video lg:aspect-square w-full rounded-2xl overflow-hidden bg-slate-100 dark:bg-slate-900 border border-slate-100 dark:border-slate-800 shadow-xl">
+            <div className="relative aspect-video lg:aspect-square w-full rounded-2xl overflow-hidden bg-slate-200 dark:bg-slate-800 border border-slate-200 dark:border-slate-800 shadow-xl">
             <img 
               src="https://images.unsplash.com/photo-1600132806370-bf17e65e942f?q=80&w=800&auto=format&fit=crop" 
               alt="Studio collaborative dashboard setup" 
@@ -85,8 +85,8 @@ export default function About() {
           {CORE_VALUES.map((val, idx) => {
             const IconComp = val.icon;
             return (
-              <div key={idx} className="p-6 rounded-2xl bg-slate-50/60 dark:bg-slate-900/20 border border-slate-100 dark:border-slate-800/60 shadow-sm space-y-4">
-                <div className="h-10 w-10 rounded-xl bg-indigo-500/10 text-indigo-500 flex items-center justify-center">
+              <div key={idx} className="p-6 rounded-2xl bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 shadow-sm space-y-4">
+                <div className="h-10 w-10 rounded-xl bg-black/10 dark:bg-white/10 text-black dark:text-white flex items-center justify-center">
                   <IconComp size={18} />
                 </div>
                 <h3 className="text-base font-bold text-slate-900 dark:text-white font-sans">{val.title}</h3>
@@ -99,15 +99,15 @@ export default function About() {
 
       {/* ── Context Metrics Bar Loop ── */}
       <div className="max-w-7xl mx-auto px-6 mt-28">
-        <div className="bg-slate-950 rounded-2xl p-8 border border-slate-900 shadow-xl relative overflow-hidden isolate">
-          <div aria-hidden="true" className="absolute top-0 right-0 h-48 w-48 rounded-full bg-indigo-600/10 blur-3xl pointer-events-none -z-10" />
+        <div className="bg-black dark:bg-white rounded-2xl p-8 border border-black dark:border-white shadow-xl relative overflow-hidden isolate">
+          <div aria-hidden="true" className="absolute top-0 right-0 h-48 w-48 rounded-full bg-slate-400/5 blur-3xl pointer-events-none -z-10" />
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6 text-center">
             {STATS_DATA.map((stat) => (
               <div key={stat.id} className="space-y-1">
-                <p className="text-3xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 to-fuchsia-400 tracking-tight font-sans">
+                <p className="text-3xl font-extrabold text-black dark:text-white tracking-tight font-sans">
                   {stat.value}
                 </p>
-                <p className="text-[11px] font-medium text-slate-400 uppercase tracking-wider">
+                <p className="text-[11px] font-medium text-slate-600 dark:text-slate-400 uppercase tracking-wider">
                   {stat.label}
                 </p>
               </div>
@@ -119,7 +119,7 @@ export default function About() {
       {/* ── Team Members Cards Grid ── */}
       <div className="max-w-7xl mx-auto px-6 mt-28">
         <div className="text-center max-w-2xl mx-auto mb-16 space-y-3">
-          <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold bg-indigo-500/10 text-indigo-600 dark:text-indigo-400 border border-indigo-500/20 uppercase tracking-wider">
+          <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold bg-slate-100 dark:bg-slate-900 text-black dark:text-white border border-slate-300 dark:border-slate-700 uppercase tracking-wider">
             <Sparkles size={10} />
             The Engineers
           </span>
@@ -131,8 +131,8 @@ export default function About() {
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-5xl mx-auto">
           {TEAM_DATA.map((member, idx) => (
-            <div key={idx} className="group relative rounded-2xl overflow-hidden bg-slate-50 dark:bg-slate-900 border border-slate-100 dark:border-slate-800/80 shadow-md transition-all duration-300 hover:scale-[1.02]">
-              <div className="relative aspect-[4/5] w-full overflow-hidden bg-slate-200 dark:bg-slate-800">
+            <div key={idx} className="group relative rounded-2xl overflow-hidden bg-slate-100 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 shadow-md transition-all duration-300 hover:scale-[1.02]">
+              <div className="relative aspect-[4/5] w-full overflow-hidden bg-slate-300 dark:bg-slate-800">
                 <img 
                   src={member.image} 
                   alt={member.name} 

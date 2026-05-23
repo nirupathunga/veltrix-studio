@@ -20,14 +20,14 @@ export default function ProductCard({ product }) {
   const filledStars   = Math.round(clampedRating);
   const emptyStars    = 5 - filledStars;
 
-  /* ── Category → subtle accent colour mapping ── */
+  /* ── Category → monochrome accent mapping ── */
   const categoryPalette = {
-    "Branding Packs":     "bg-violet-100   text-violet-700   dark:bg-violet-950/60  dark:text-violet-300",
-    "UI Kits":            "bg-indigo-100   text-indigo-700   dark:bg-indigo-950/60  dark:text-indigo-300",
-    "Website Templates":  "bg-sky-100      text-sky-700      dark:bg-sky-950/60     dark:text-sky-300",
-    "Social Media Assets":"bg-fuchsia-100  text-fuchsia-700  dark:bg-fuchsia-950/60 dark:text-fuchsia-300",
+    "Branding Packs":     "bg-slate-200   text-slate-700   dark:bg-slate-800  dark:text-slate-300",
+    "UI Kits":            "bg-slate-200   text-slate-700   dark:bg-slate-800  dark:text-slate-300",
+    "Website Templates":  "bg-slate-200   text-slate-700   dark:bg-slate-800  dark:text-slate-300",
+    "Social Media Assets":"bg-slate-200   text-slate-700   dark:bg-slate-800  dark:text-slate-300",
   };
-  const badgeClass = categoryPalette[category] ?? "bg-slate-100 text-slate-700 dark:bg-slate-800 dark:text-slate-300";
+  const badgeClass = categoryPalette[category] ?? "bg-slate-200 text-slate-700 dark:bg-slate-800 dark:text-slate-300";
 
   return (
     <article
@@ -35,10 +35,10 @@ export default function ProductCard({ product }) {
         group relative flex flex-col
         rounded-2xl overflow-hidden
         bg-white dark:bg-slate-900
-        border border-slate-100 dark:border-slate-800/60
-        shadow-md hover:shadow-xl hover:shadow-indigo-500/10
+        border border-slate-200 dark:border-slate-800
+        shadow-md hover:shadow-xl hover:shadow-black/10 dark:hover:shadow-white/10
         transition-all duration-300 hover:scale-[1.03]
-        focus-within:ring-2 focus-within:ring-indigo-500/40
+        focus-within:ring-2 focus-within:ring-black/20 dark:focus-within:ring-white/20
       "
     >
       {/* ── Image block ── */}
