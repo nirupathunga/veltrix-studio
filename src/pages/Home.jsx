@@ -474,33 +474,34 @@ function CTASection() {
           transition={{ duration: 0.65, ease: [0.22, 1, 0.36, 1] }}
           className="
             relative isolate overflow-hidden rounded-3xl
-            bg-gradient-to-br from-indigo-600 via-violet-600 to-fuchsia-600
-            px-8 py-16 sm:px-16 sm:py-20 text-center shadow-2xl shadow-indigo-600/30
+            bg-white dark:bg-black
+            border border-slate-200 dark:border-slate-800
+            px-8 py-16 sm:px-16 sm:py-20 text-center shadow-2xl shadow-black/5 dark:shadow-white/5
           "
         >
           <div aria-hidden="true" className="pointer-events-none absolute inset-0 -z-10 overflow-hidden rounded-3xl">
-            <div className="absolute -top-20 -left-20 h-64 w-64 rounded-full bg-white/10 blur-3xl" />
-            <div className="absolute -bottom-10 right-10 h-48 w-48 rounded-full bg-fuchsia-400/20 blur-2xl" />
+            <div className="absolute -top-20 -left-20 h-64 w-64 rounded-full bg-slate-200/20 dark:bg-slate-800/20 blur-3xl" />
+            <div className="absolute -bottom-10 right-10 h-48 w-48 rounded-full bg-slate-200/15 dark:bg-slate-800/15 blur-2xl" />
             <svg className="absolute inset-0 h-full w-full opacity-[0.06]" xmlns="http://www.w3.org/2000/svg">
               <defs>
                 <pattern id="cta-grid" width="32" height="32" patternUnits="userSpaceOnUse">
-                  <path d="M 32 0 L 0 0 0 32" fill="none" stroke="white" strokeWidth="0.5" />
+                  <path d="M 32 0 L 0 0 0 32" fill="none" stroke="currentColor" strokeWidth="0.5" className="text-slate-900 dark:text-white" />
                 </pattern>
               </defs>
               <rect width="100%" height="100%" fill="url(#cta-grid)" />
             </svg>
           </div>
 
-          <span className="inline-flex items-center gap-1.5 rounded-full border border-white/25 bg-white/15 backdrop-blur-sm px-3.5 py-1 text-[11px] font-semibold tracking-widest uppercase text-white/80 mb-6">
+          <span className="inline-flex items-center gap-1.5 rounded-full border border-slate-300 dark:border-slate-700 bg-slate-100 dark:bg-slate-900 backdrop-blur-sm px-3.5 py-1 text-[11px] font-semibold tracking-widest uppercase text-slate-700 dark:text-slate-300 mb-6">
             <Sparkles size={10} strokeWidth={2.5} />
             Ready to start?
           </span>
 
-          <h2 className="text-3xl sm:text-5xl font-bold tracking-tight text-white leading-tight mb-5 font-sans">
+          <h2 className="text-3xl sm:text-5xl font-bold tracking-tight text-slate-900 dark:text-white leading-tight mb-5 font-sans">
             Your next breakthrough product<br className="hidden sm:block" /> starts with a conversation.
           </h2>
 
-          <p className="max-w-xl mx-auto text-sm sm:text-base text-white/70 leading-relaxed mb-10 font-light">
+          <p className="max-w-xl mx-auto text-sm sm:text-base text-slate-600 dark:text-slate-400 leading-relaxed mb-10 font-light">
             Whether you're an early-stage founder scaling an identity framework or launching an enterprise tool — Zyvone Technologies brings the technical taste to execute.
           </p>
 
@@ -510,9 +511,9 @@ function CTASection() {
               placeholder="your@company.com"
               className="
                 w-full sm:flex-1 rounded-xl
-                border border-white/20 bg-white/15 backdrop-blur-sm
-                px-4 py-3 text-sm text-white placeholder-white/50
-                focus:outline-none focus:ring-2 focus:ring-white/40
+                border border-slate-300 dark:border-slate-700 bg-slate-50 dark:bg-slate-900 backdrop-blur-sm
+                px-4 py-3 text-sm text-slate-900 dark:text-white placeholder-slate-500 dark:placeholder-slate-400
+                focus:outline-none focus:ring-2 focus:ring-black/20 dark:focus:ring-white/20
                 transition-all duration-200
               "
             />
@@ -522,8 +523,8 @@ function CTASection() {
                 flex-shrink-0 w-full sm:w-auto
                 inline-flex items-center justify-center gap-2
                 rounded-xl px-6 py-3 text-sm font-semibold
-                bg-white text-indigo-700 cursor-pointer
-                shadow-lg shadow-black/15 hover:bg-white/95
+                bg-black dark:bg-white text-white dark:text-black cursor-pointer
+                shadow-lg shadow-black/15 dark:shadow-white/10 hover:bg-slate-900 dark:hover:bg-slate-100
                 hover:-translate-y-0.5 transition-all duration-200
               "
             >
@@ -534,8 +535,8 @@ function CTASection() {
 
           <div className="flex flex-wrap items-center justify-center gap-x-6 gap-y-2">
             {["No commitment required", "Response within 24h", "NDA available"].map((item) => (
-              <span key={item} className="flex items-center gap-1.5 text-xs text-white/60 font-light">
-                <span className="h-1 w-1 rounded-full bg-white/40" />
+              <span key={item} className="flex items-center gap-1.5 text-xs text-slate-500 dark:text-slate-400 font-light">
+                <span className="h-1 w-1 rounded-full bg-slate-400 dark:bg-slate-600" />
                 {item}
               </span>
             ))}
