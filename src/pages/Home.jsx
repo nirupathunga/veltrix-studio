@@ -92,7 +92,7 @@ export default function Home() {
 ──────────────────────────────────────────────────────── */
 function HeroSection() {
   return (
-    <section className="relative isolate flex flex-col items-center justify-center text-center min-h-[92vh] px-5 sm:px-8 pt-28 pb-20 overflow-hidden">
+    <section className="relative isolate flex flex-col items-center justify-center text-center min-h-[92vh] px-5 sm:px-8 pt-28 pb-20 overflow-hidden bg-gradient-to-br from-neutral-50 via-white to-neutral-100/80 dark:bg-black">
       
       {/* Background gradients and mesh overlays */}
       <div aria-hidden="true" className="pointer-events-none absolute inset-0 -z-10 overflow-hidden">
